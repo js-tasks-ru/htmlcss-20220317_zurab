@@ -4,3 +4,7 @@ node_modules
 package-lock.json
 yarn.lock
 .DS_Store
+FarMenu.ini
+ex_files
+.Saved
+_arc
