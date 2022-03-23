@@ -5,7 +5,6 @@
 .button {
   margin: 0;
   padding: 15px;
-  border: none;
   border-radius: 8px;
   background: none;
   color: var(--white);
@@ -23,18 +22,22 @@
 
 .button--prymary {
   background-color: var(--primary-bg);
+  border: 1px solid var(--primary-bg);
 }
 
 .button--prymary:hover {
   background-color: var(--primary-bg-hover);
+  border-color: var(--primary-bg-hover);
 }
 
 .button--secondary {
   background-color: var(--secondary-bg);
+  border: 1px solid var(--secondary-bg);
 }
 
 .button--secondary:hover {
   background-color: var(--secondary-bg-hover);
+  border-color: var(--secondary-bg-hover);
 }
 
 .button--alternate {
@@ -45,5 +48,5 @@
 
 .button--alternate:hover {
   background-color: var(--alternate-bg-hover);
-  border: 1px solid var(--alternate-border-hover);
+  border-color: var(--alternate-border-hover);
 }
