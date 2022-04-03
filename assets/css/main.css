@@ -32,7 +32,7 @@
     --alternate-border-hover: var(--black);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
