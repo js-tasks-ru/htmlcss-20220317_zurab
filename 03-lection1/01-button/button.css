@@ -3,7 +3,10 @@
   padding: 15px 15px 14px;
   border-radius: 8px;
   background: none;
+  box-sizing: border-box;
   color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   cursor: pointer;
