@@ -27,7 +27,7 @@
   list-style: none;
 }
 
-.accordion details[open] .accordion__title {
+.accordion__item[open] .accordion__title {
   color: var(--black);
 }
 
