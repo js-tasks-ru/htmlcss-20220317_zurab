@@ -3,9 +3,26 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+            .buttons p {
+                margin: 10px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="buttons">
+            <p>
+                <button class="button button--prymary">Prymary button</button>
+                <button class="button button--secondary">Secondary button</button>
+                <button class="button button--alternate">Alternate button</button>
+            </p>
+            <p>
+                <button class="button button--prymary" disabled>Prymary button</button>
+                <button class="button button--secondary" disabled>Secondary button</button>
+                <button class="button button--alternate" disabled>Alternate button</button>
+            </p>
+        </div>
     </body>
 </html>
