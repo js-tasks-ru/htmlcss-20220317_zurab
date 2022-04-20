@@ -3,8 +3,26 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./srcset.css">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        </style>
     </head>
-    <body>
-
+    <body class="container">
+        <div class="img-container">
+            <picture>
+                <img
+                    class="img"
+                    src="./public/forest_400.jpg"
+                    alt="forest"
+                    srcset="./public/forest_400.jpg 1x,
+                            ./public/forest_768.jpg 2x"
+                >
+            </picture>
+        </div>
     </body>
 </html>
