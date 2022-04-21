@@ -1,0 +1,27 @@
+.header {
+    padding: 17px 0 68px;
+    background-color: #fff;
+    color: var(--grey-4);
+}
+
+.header__title {
+    margin: 48px 0 0;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media (min-width: 480px) {
+    .header {
+        padding-top: 25px;
+        color: var(--black);
+    }
+    .header__title {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+}
