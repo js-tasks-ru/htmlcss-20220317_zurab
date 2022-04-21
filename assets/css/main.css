@@ -6,8 +6,14 @@
 @import '../../components/preview/preview.css';
 @import '../../components/logo/logo.css';
 @import '../../components/container/container.css';
+@import '../../components/card/card.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/avatar/avatar.css';
 
 :root {
+    --border-gray-2: 1px solid var(--grey-2);
     --white: #ffffff;
     --black: #212429;
     --black-strong: #000000;
@@ -28,6 +34,9 @@
     --preview: #F9FAFC;
 
     --base-radius: 8px;
+    --card-radius: 8px;
+
+    --base-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
 
     --error: var(--red);
     --success: var(--blue);

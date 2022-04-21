@@ -1,6 +1,14 @@
 .preview {
     flex-grow: 1;
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
+    border-top: var(--border-gray-2);
+    border-bottom: var(--border-gray-2);
     background-color: var(--preview);
+}
+
+.preview__inner {
+    display: grid;
+    padding: 68px 0;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: 367px;
+    gap: 30px;    
 }
