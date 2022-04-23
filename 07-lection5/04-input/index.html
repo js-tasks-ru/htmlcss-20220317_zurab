@@ -21,22 +21,34 @@
     <body class="container">
         <form class="form">
             <div class="form-group">
-                <label class="form-group__control">
-                    <p class="form-group__label">Label</p>
+                <label class="form-group__label">Label</label>
+                <div class="form-group__control">
                     <input class="form-group__input" type="text" placeholder="Placeholder">
-                </label>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
             </div>
 
             <div class="form-group">
-                <label class="form-group__control">
-                    <p class="form-group__label">Focus</p>
+                <label class="form-group__label">Focus</label>
+                <div class="form-group__control">
                     <input class="form-group__input" type="text" placeholder="Placeholder" value="Filled Input" autofocus>
-                </label>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label class="form-group__control">
-                    <p class="form-group__label">Success</p>
+            <div class="form-group form-group--success">
+                <label class="form-group__label">Success</label>
+                <div class="form-group__control">
                     <input class="form-group__input" type="text" placeholder="Placeholder" value="Success" required>
                     <svg class="form-group__icon form-group__icon-success">
                         <use href="../../assets/images/sprites.svg#input-success"></use>
@@ -44,25 +56,25 @@
                     <svg class="form-group__icon form-group__icon-error">
                         <use href="../../assets/images/sprites.svg#input-invalid"></use>
                     </svg>
-                </label>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label class="form-group__control">
-                    <p class="form-group__label">Error</p>
-                    <input class="form-group__input" type="text" placeholder="Placeholder" required>
+            <div class="form-group form-group--invalid">
+                <label class="form-group__label">Error</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder" value="Error" required>
                     <svg class="form-group__icon form-group__icon-success">
                         <use href="../../assets/images/sprites.svg#input-success"></use>
                     </svg>
                     <svg class="form-group__icon form-group__icon-error">
                         <use href="../../assets/images/sprites.svg#input-invalid"></use>
                     </svg>
-                </label>
+                </div>
             </div>
 
             <div class="form-group">
-                <label class="form-group__control">
-                    <p class="form-group__label">Disabled</p>
+                <label class="form-group__label">Disabled</label>
+                <div class="form-group__control">
                     <input class="form-group__input" type="text" placeholder="Placeholder" disabled>
                     <svg class="form-group__icon form-group__icon-success">
                         <use href="../../assets/images/sprites.svg#input-success"></use>
@@ -70,7 +82,7 @@
                     <svg class="form-group__icon form-group__icon-error">
                         <use href="../../assets/images/sprites.svg#input-invalid"></use>
                     </svg>
-                </label>
+                </div>
             </div>
         </form>
     </body>
