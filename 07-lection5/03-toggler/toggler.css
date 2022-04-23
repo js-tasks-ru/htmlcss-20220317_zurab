@@ -1,0 +1,87 @@
+.toggler {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggler__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+.toggler__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toggler__control {
+    display: flex;
+    position: relative;
+    height: 28px;
+    width: 52px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggler__button {
+    display: block;
+    position: absolute;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+    transition: left .1s linear;
+}
+
+.toggler__input:disabled ~ .toggler__state 
+.toggler__control {
+    background: var(--grey-2);
+    border-color: var(--grey-2);    
+}
+
+.toggler__input:disabled ~ .toggler__state
+.toggler__button {
+    background-color: var(--grey-3);
+}
+
+.toggler__input:checked ~ .toggler__state 
+.toggler__control {
+    background: var(--primary-bg);
+    border-color: var(--primary-bg);    
+}
+
+.toggler__input:checked ~ .toggler__state 
+.toggler__button {
+    left: 24px;
+    background-color: var(--white);
+}
+
+.toggler__control:before {
+    content: 'Off';
+    position: absolute;
+    top: 1px;
+    left: 63px;
+    font: normal 400 16px / 24px Inter, sans-serif;
+    color: var(--grey-4)
+}
+
+.toggler__input:checked ~ .toggler__state
+.toggler__control:before {
+    content: 'On';
+}
+
+.toggler__input:disabled ~ .toggler__state
+.toggler__control:before {
+    content: 'Disabled';
+}
+
+.toggler__input:focus ~ .toggler__state
+.toggler__control:before {
+    text-decoration: underline;
+}

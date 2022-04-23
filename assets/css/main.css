@@ -11,6 +11,7 @@
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/calendar/calendar.css';
 @import '../../components/avatar/avatar.css';
+@import '../../components/checkbox/checkbox.css';
 
 :root {
     --border-gray-2: 1px solid var(--grey-2);
