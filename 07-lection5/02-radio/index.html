@@ -4,8 +4,74 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .title {
+                margin: 0;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--grey-3)
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        </style>
     </head>
-    <body>
+    <body class="container">
+        <form>
+            <h1 class="title">Radio button</h1>
 
+            <label class="radio">
+                <input type="radio" class="radio__input" name="radio">
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__title">Default</div>
+                </div>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radio__input" name="radio" checked>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__title">Selected</div>
+                </div>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radio__input" name="radio" disabled>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__title">Disabled</div>
+                </div>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radio__input" name="radio" autofocus>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__title">Focused</div>
+                </div>
+            </label>
+        </form>
     </body>
 </html>
