@@ -65,3 +65,7 @@
 .calendar__item--selected {
     background-color: var(--light-blue);
 }
+
+.calendar--card {
+    transform: scale(.7);
+}

@@ -52,3 +52,7 @@
     text-align: center;
     color: var(--grey-2);
 }
+
+.tooltip--card {
+    margin: 55px auto;
+}

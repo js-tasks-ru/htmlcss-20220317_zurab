@@ -9,3 +9,7 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.avatar--card {
+    margin: 0 auto;
+}
