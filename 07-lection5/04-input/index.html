@@ -4,8 +4,86 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 30px;
+            }
+        </style>
     </head>
-    <body>
+    <body class="container">
+        <form class="form">
+            <div class="form-group">
+                <label class="form-group__label">Label</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder">
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <label class="form-group__label">Focus</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder" value="Filled Input" autofocus>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="form-group form-group--success">
+                <label class="form-group__label">Success</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder" value="Success" required>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="form-group form-group--invalid">
+                <label class="form-group__label">Error</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder" value="Error" required>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-group__label">Disabled</label>
+                <div class="form-group__control">
+                    <input class="form-group__input" type="text" placeholder="Placeholder" disabled>
+                    <svg class="form-group__icon form-group__icon-success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-group__icon form-group__icon-error">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+        </form>
     </body>
 </html>
